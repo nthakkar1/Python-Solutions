@@ -1,0 +1,25 @@
+Q. st = 'Print only the words that start with s in this sentence'
+
+Soln :   for word in st.split():
+            if word[0].lower() == 's':
+              print(word)
+
+
+Q. Use a List Comprehension to create a list of all numbers between 1 and 50 that are divisible by 3.
+Soln : mylist = [x for x in range(0,51) if x%3 == 0]
+
+Q. Go through the string below and if the length of a word is even print "even!"
+Soln : 
+  st = 'Print every word in this sentence that has an even number of letters'
+    for word in st.split():
+      if len(word)%2==0:
+        print(word)
+
+Q. create a list of the first letters of every word in the string below:
+Soln : 
+  
+st = 'Create a list of the first letters of every word in this string'
+mylist = [word for word in st.split()]
+for word in st.split():
+    mylist.append(word[0])
+print(mylist)
