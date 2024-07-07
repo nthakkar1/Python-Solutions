@@ -1,0 +1,21 @@
+Q: Write a function that takes in a list of integers and returns True if it contains 007 in order
+
+
+Soln : 
+def myfunc(nums):
+    
+    pattern = [0, 0, 7]
+    index = 0  
+
+    
+    for num in nums:
+        
+        if num == pattern[index]:
+            index += 1  
+            if index == len(pattern):
+                return True
+    return False
+
+
+result = myfunc([1, 0, 2, 0, 0, 7, 5])
+print(result)  
