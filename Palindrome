@@ -1,0 +1,22 @@
+strin = input('Enter a string: ')
+
+first, last = 0, len(strin) - 1
+is_palindrome = True  # Assume the string is a palindrome initially
+
+while first < last:
+    if strin[first] == strin[last]:
+        first += 1
+        last -= 1
+    else:
+        is_palindrome = False
+        break  
+
+if is_palindrome:
+    print('pal')
+else:
+    print('no pal')
+
+
+
+Soln 2 : if strin == strin[::-1]:
+    print('pal')
